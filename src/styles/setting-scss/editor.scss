@@ -1,0 +1,25 @@
+.editor{
+    .row{
+        @include flex(space-between, auto, nowrap);
+        margin-top: 1rem;
+        .col{
+            flex-basis:50%;
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .editor{
+        .row{
+            @include flex(space-between, center, wrap);
+            .col{
+                flex-basis: 100% !important;
+            }
+
+            .col-1{
+                display: none;
+            }
+        }
+    }
+
+}

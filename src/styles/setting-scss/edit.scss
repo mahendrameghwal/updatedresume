@@ -1,0 +1,12 @@
+.edit{
+
+    .row{
+        @include flex(space-between, center, nowrap);
+
+        .col{
+            flex-basis: 50%;
+            
+        }
+       
+    }
+}

@@ -1,0 +1,41 @@
+.section-row {
+  display: grid;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 30px auto;
+  display: grid;
+  gap: 1rem;
+  
+  grid-template-columns: repeat(2, 1fr);
+
+  .col1 {
+    padding: 20px 0;
+
+    li {
+      font-size: 1rem;
+      border-bottom: none;
+      margin: 10px;
+      .ok {
+        margin-right: 5px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .col2 {
+    .img-div {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+.section-row
+{
+  grid-template-columns: repeat(1, 1fr);
+
+}
+    
+}

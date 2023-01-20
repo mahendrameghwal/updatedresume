@@ -1,0 +1,66 @@
+
+.resume{
+    .row{
+        @include flex(space-between, center, wrap);
+
+        .col{
+            position: relative;
+            width: 22% !important;
+            box-shadow: $box-shadow;
+            margin: 1rem 0;
+            object-fit: cover;
+            img{
+                width: 100% !important; 
+            }
+            
+            &:hover{
+                button{
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                
+            }
+            button{
+                width: 70%;
+                display: none;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .resume{
+        .row{
+    
+            .col{
+                flex-basis: 48% !important;
+              
+                button{
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 50%;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:400px){
+    .resume{
+        .row{
+    
+            .col{
+                flex-basis: 100% !important;
+            }
+
+        }
+    }
+}
